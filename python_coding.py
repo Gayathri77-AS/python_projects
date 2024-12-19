@@ -185,9 +185,42 @@ print(count)
 #Output: 5
 
 #------------------------------------------------------------------------------------------------------------------------
+#Common elements between two arrays
 
+def find_common_elements(arr1, arr2): 
+    s1 = set(arr1) 
+    common_set = set() 
+    for i in arr2: 
+        if i in s1: 
+            common_set.add(i) 
+    return common_set 
+arr1 = [1, 2, 3, 4, 5] 
+arr2 = [4, 5, 6, 7, 8] 
+common_elements = find_common_elements(arr1, arr2) 
+print(common_elements)
 
+#Output: [4,5]
 
+#------------------------------------------------------------------------------------------------------------------------
+#Finding 1st and last elements in an arraylist
+
+def find_first_and_last(elements):
+    if elements:
+        first_element = elements[0]
+        last_element = elements[-1]
+        print(first_element)
+        print(last_element)
+    else:
+        print("Empty List")
+
+arrlist = ["banana", "apple", "cherry", "berry"]
+find_first_and_last(arrlist)
+
+'''
+Output:banana
+berry
+'''
+#------------------------------------------------------------------------------------------------------------------------
 
 
 
